@@ -17,7 +17,7 @@ def categories_by_slug(request, cat_slug):
 
 def archive(request, year):
     if year > 2024:
-        return redirect('cats', 'music')
+        return redirect('cats', 'moves')
     return HttpResponse((f"<h1>Архив по годам</h1><p >{year}</p>"))
 
 def page_not_found(request, exception):
